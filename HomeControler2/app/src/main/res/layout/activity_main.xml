@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0e9dc6c"
+    tools:context="com.gmail.eng_mahmoud.homecontroler.MainActivity">
+
+    <TextView
+        android:id="@+id/roomOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRoom1"
+        android:layout_alignStart="@+id/btnRoom1"
+        android:layout_below="@+id/btnRoom1"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Bed Room"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnRoom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AppName"
+        android:layout_alignStart="@+id/AppName"
+        android:layout_below="@+id/AppName"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/bed"
+        android:padding="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRoom2"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/roomOne"
+        android:layout_alignEnd="@+id/btnBluetooth"
+        android:layout_alignRight="@+id/btnBluetooth"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/living"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/roomTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/roomOne"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/homeGas"
+        android:layout_toRightOf="@+id/homeGas"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Living Room"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/AppName"
+        android:layout_alignStart="@+id/AppName"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/shapes_of_btn"
+        android:fontFamily="casual"
+        android:text="Paring Bluetooth"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="274dp"
+        android:layout_height="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Smart Home Controller"
+        android:textColor="#000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/btnRoom1"
+        android:layout_toRightOf="@+id/btnRoom1"
+        android:gravity="center"
+        android:text="©copy rights saved 2018" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/door" />
+
+    <TextView
+        android:id="@+id/houseDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="House Door"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/homeGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/roomTwo"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/gas" />
+
+    <TextView
+        android:id="@+id/Gas"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/homeGas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Gas"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

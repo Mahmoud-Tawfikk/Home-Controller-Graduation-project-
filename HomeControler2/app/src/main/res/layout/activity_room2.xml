@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6f55134"
+    tools:context="com.gmail.eng_mahmoud.homecontroler.Room2">
+
+    <ImageView
+        android:id="@+id/imageRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/living" />
+
+    <TextView
+        android:id="@+id/txtRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageRoom"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Living Room"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/txtRoom2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shapes">
+
+        <TextView
+            android:id="@+id/auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Auto Control"
+            android:textColor="#b61734"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgebulb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/auto"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/auto"
+            android:layout_toStartOf="@+id/auto"
+            android:background="@drawable/bulb" />
+
+        <Switch
+            android:id="@+id/switchBulb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgebulb"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textOn="On"
+            android:textOff="Off"
+            android:showText="true" />
+
+        <ImageView
+            android:id="@+id/imageFan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imgebulb"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imgebulb"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/fan" />
+
+        <Switch
+            android:id="@+id/switchFan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/switchBulb"
+            android:layout_alignRight="@+id/switchBulb"
+            android:layout_alignTop="@+id/imageFan"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:textOn="On"
+            android:textOff="Off"
+            android:showText="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shapes">
+
+        <TextView
+            android:id="@+id/auto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Manual Control"
+            android:textColor="#4932e1"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgebulb2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageFan2"
+            android:layout_alignStart="@+id/imageFan2"
+            android:layout_below="@+id/auto2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bulb" />
+
+        <Switch
+            android:id="@+id/switchBulb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgebulb2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:textOn="On"
+            android:textOff="Off"
+            android:showText="true" />
+
+        <ImageView
+            android:id="@+id/imageFan2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/auto2"
+            android:layout_toStartOf="@+id/auto2"
+            android:background="@drawable/fan" />
+
+        <Switch
+            android:id="@+id/switchFan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageFan2"
+            android:layout_alignEnd="@+id/switchBulb2"
+            android:layout_alignRight="@+id/switchBulb2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textOn="On"
+            android:textOff="Off"
+            android:showText="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
